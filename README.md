@@ -1,2 +1,4 @@
+## Website for IITK COVID Student Survey.
+
 Website Template Credits: 
-Layer is a free landing page template from Uisual. Visit [Uisual](https://uisual.com) for more free templates.
+Layer is a free landing page template from [Uisual](https://uisual.com).
