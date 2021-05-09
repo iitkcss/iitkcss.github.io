@@ -192,9 +192,17 @@ strong { font-weight: 700; }
 
 small { font-size: var(--ui-typography-s); }
 
+.non-bold { font-weight: normal!important; }
+
 .ui-text-note {
   color: var(--ui-color-typography-note);
   line-height: 1;
+}
+
+.ui-text-intro {font-weight: bold;}
+
+.only-big-screens {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -207,6 +215,10 @@ svg {
   height: auto;
   margin: 0 auto;
   max-width: 100%;
+}
+
+#timeline {
+  margin-top: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -495,7 +507,7 @@ div label[for=ui-component-toggle__yearly] {
   grid-row-start: 1;
 }
 
-.ui-section-feature__layout:last-of-type { margin-top: 5rem; }
+.ui-section-feature__layout:last-of-type { margin-top: 3rem; }
 
 /*--------------------------------------------------------------
 |
@@ -685,6 +697,11 @@ div label[for=ui-component-toggle__yearly] {
     padding-left: var(--ui-layout-gutter);
   }
 
+  #timeline {
+    margin-top: 0;
+  }
+
+
   /*------------------------------------------------------------
   LAYOUT
   ------------------------------------------------------------*/
@@ -709,6 +726,10 @@ div label[for=ui-component-toggle__yearly] {
   .ui-layout-column-4 {
     width: calc((var(--ui-layout-grid) * 4) +
            (var(--ui-layout-gutter) * 3));
+  }
+
+  .ui-section-feature__layout:last-of-type {
+    margin-top: 5rem;
   }
 
   /*------------------------------------------------------------
@@ -861,6 +882,11 @@ div label[for=ui-component-toggle__yearly] {
     justify-items: center;
   }
 
+  
+  .only-big-screens {
+    display: block;
+  }
+
   /*------------------------------------------------------------
   SECTION
   ------------------------------------------------------------*/
@@ -933,7 +959,7 @@ div label[for=ui-component-toggle__yearly] {
   TYPOGRAPHY
   ------------------------------------------------------------*/
 
-  .ui-text-intro { font-size: var(--ui-typography-h4); }
+  .ui-text-intro { font-size: var(--ui-typography-h4); font-weight: normal;}
 
   /*------------------------------------------------------------
   LAYOUT
